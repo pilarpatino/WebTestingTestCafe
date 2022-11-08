@@ -1,5 +1,8 @@
 {
   "dependencies": {
+    "all": "^0.0.0",
+    "bufferutil": "^4.0.7",
+    "node.js": "^0.0.1-security",
     "testcafe": "^2.0.1"
   },
   "name": "webtestingtestcafe",

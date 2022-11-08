@@ -3,9 +3,13 @@ import { Selector } from "testcafe";
 fixture("Set Speed Fixture")
     .page("https://devexpress.github.io/testcafe/example/")
 
-    test("Firs Test", async t =>{
+    const nameInput = Selector('#developer-name');
+
+    test("Set Speed Test", async t =>{
         await t
-            .typeText("#developer-name", "TAU")
+            .setTestSpeed(0.01)
+            .typeText(nameInput, "Peter")
+            .typeText(nameInput, "Parker")
             .click("#macos")
             .click("#submit-button");
 
