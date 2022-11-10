@@ -20,3 +20,4 @@
 
 - Run test using Chromium Device Emulation = testcafe "chrome:emulation:device=iphone X" tests/firstSelectorTest.js       
 
+- Execution with Metadata = testcafe chrome tests/testMetadataScript.js --test-meta env=production
