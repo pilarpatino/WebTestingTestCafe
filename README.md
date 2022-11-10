@@ -19,3 +19,4 @@
                               testcafe firefox:headless tests/firstSelectorTest.js
 
 - Run test using Chromium Device Emulation = testcafe "chrome:emulation:device=iphone X" tests/firstSelectorTest.js       
+
