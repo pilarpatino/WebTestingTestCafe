@@ -13,7 +13,7 @@ fixture("Set Speed Fixture")
     */
 
     test.page("https://devexpress.github.io/testcafe/example/")
-    ("Firs Test two", async t =>{
+    ("skipTest - Firs Test two", async t =>{
         await t
             .typeText("#developer-name", "TAU")
             .click("#macos")

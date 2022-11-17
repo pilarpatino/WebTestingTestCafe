@@ -8,22 +8,23 @@ fixture("Hooks Fixture")
     });
     test
     .page("https://devexpress.github.io/testcafe/example/")
-    ("Firs Test", async t =>{
+    ("screenshotDemo - Firs Test", async t =>{
         await t
             .typeText("#developer-name", "TAU")
             .click("#macos")
-            .click("#submit-button");
+            .click("#submit-button").takeScreenshot();
 
     });
 
     test
     .page("https://devexpress.github.io/testcafe/example/")
-    ("Second Test", async t =>{
+    ("screenshotDemo - Second Test", async t =>{
         await t
             .typeText("#developer-name", "TAU")
             .click("#macos")
+            .takeScreenshot()
+            .takeElementScreenshot("#submit-button")
             .click("#submit-button");
-
     });
 
     
