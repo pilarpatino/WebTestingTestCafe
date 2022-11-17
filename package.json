@@ -1,20 +1,21 @@
 {
   "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
     "all": "^0.0.0",
     "bufferutil": "^4.0.7",
     "node.js": "^0.0.1-security",
-    "testcafe": "^2.0.1"
+    "testcafe": "^2.1.0"
   },
   "name": "webtestingtestcafe",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "testcafe chrome:headless tests"
+    "test": "testcafe chrome:headless test"
   },
   "author": "",
   "license": "ISC",
   "directories": {
-    "test": "tests"
+    "test": "test"
   },
   "description": ""
 }

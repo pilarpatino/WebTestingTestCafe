@@ -1,9 +1,14 @@
-fixture.meta('Version', '1')("First Fixture")
-    .page("https://devexpress.github.io/testcafe/example/");
-
-test.meta('env', 'production')
+fixture("Hooks Fixture")
     .page("https://devexpress.github.io/testcafe/example/")
-    ("Firs Test", async t =>{
+    .beforeEach(async t => {
+        await t
+        .maximizeWindow()
+        .setTestSpeed(0.1)
+        .setPageLoadTimeout(0)
+    });
+    test
+    .page("https://devexpress.github.io/testcafe/example/")
+    ("hooksTest - Firs Test", async t =>{
         await t
             .typeText("#developer-name", "TAU")
             .click("#macos")
@@ -13,7 +18,7 @@ test.meta('env', 'production')
 
     test
     .page("https://devexpress.github.io/testcafe/example/")
-    ("Second Test", async t =>{
+    ("hooksTest - Second Test", async t =>{
         await t
             .typeText("#developer-name", "TAU")
             .click("#macos")
